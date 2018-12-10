@@ -264,10 +264,35 @@ function love.keypressed(key)
 
 			cargarSalidas()
 
-			if vcomando == "MIRAR" then
+			if vcomando == "MIRAR" or vcomando == "EXAMINAR" then
 				aumentarTurno()
 				room2()
 			end
+			
+			if vcomando == "MIRAR BOTELLAS" or vcomando == "MIRAR BOTELLA" or vcomando == "EXAMINAR BOTELLA" or vcomando == "EXAMINAR BOTELLAS" then
+				aumentarTurno()
+				eliza("Son marcas de bebidas baratas. Pura mierda. No te bebas ninguna.")
+			end
+			
+			if vcomando == "MIRAR CALZONCILLOS" or vcomando == "MIRAR CALZONCILLO" or vcomando == "MIRAR CALZONES" or vcomando == "EXAMINAR CALZONCILLOS" or vcomando == "EXAMINAR CALZONCILLO" or vcomando == "EXAMINAR CALZONES" then
+				aumentarTurno()
+				eliza("Los calzoncillos son de la marca abanderado. Uno de ellos tiene zurraspas.")
+			end
+			
+			if vcomando == "MIRAR SUJETADOR" or vcomando == "MIRAR SUJETADORES" or vcomando == "MIRAR WONDERBRA" or vcomando == "EXAMINAR SUJETADORES" or vcomando == "EXAMINAR SUJETADOR" or vcomando == "EXAMINAR WONDERBRA" then
+				aumentarTurno()
+				eliza("Los sujetadores son de la marca Woman Secret. No los quieres para nada.")
+			end
+			
+			if vcomando == "COGER CALZONCILLOS" or vcomando == "COGER CALZONCILLO" or vcomando == "COGER CALZONES" or vcomando == "AGARRAR CALZONCILLOS" or vcomando == "AGARRAR CALZONCILLO" or vcomando == "AGARRAR CALZONES" then
+				aumentarTurno()
+				eliza("No necesitas eso. Están usados con zurraspas. No valen ni para trapos.")
+			end
+			
+			if vcomando == "COGER SUJETADOR" or vcomando == "COGER SUJETADORES" or vcomando == "COGER WONDERBRA" or vcomando == "AGARRAR SUJETADORES" or vcomando == "AGARRAR SUJETADOR" or vcomando == "AGARRAR WONDERBRA" then
+				aumentarTurno()
+				eliza("No necesitas eso para nada. Están usados y no te pertenecen.")
+			end			
 			
 			if vcomando == "HORA" or vcomando == "H" or vcomando == "LA HORA" or vcomando == "QUE HORA ES" or vcomando == "¿QUE HORA ES?" or vcomando == "QUE HORA ES?" or vcomando == "MIRAR HORA" or vcomando == "MIRAR LA HORA" or vcomando == "CONSULTAR HORA" or vcomando == "CONSULTAR LA HORA" or vcomando == "CONSULTAR LA HORA DEL RELOJ" or vcomando == "CONSULTAR LA HORA DEL RELOJ DE LA PARED" or vcomando == "MIRAR RELOJ" or vcomando == "MIRAR RELOJ PARED" or vcomando == "MIRAR RELOJ DE LA PARED" or vcomando == "CONSULTAR EL RELOJ DE LA PARED" or vcomando == "CONSULTAR EL RELOJ" or vcomando == "CONSULTAR RELOJ" or vcomando == "VER LA HORA" or vcomando == "VER LA HORA DEL RELOJ" or vcomando == "VER LA HORA DEL RELOJ DE LA PARED" or vcomando == "VER RELOJ" or vcomando == "MOSTRAR LA HORA" then
 				aumentarTurno()
@@ -412,10 +437,15 @@ function love.keypressed(key)
 
 			cargarSalidas()
 
-			if vcomando == "MIRAR" then
+			if vcomando == "MIRAR" or vcomando == "EXAMINAR" then
 				aumentarTurno()
 				room4()
 			end
+			
+			if vcomando == "CERRAR GRIFO" or vcomando == "CORTAR GRIFO" or vcomando == "CERRAR LOS GRIFOS" or vcomando == "CORTAR EL AGUA" or vcomando == "CORTAR FLUJO DE AGUA" or vcomando == "APAGAR EL GRIFO" or vcomando == "CHAPAR GRIFO" then
+				aumentarTurno()
+				eliza("No puedes cerrar el grifo sin antes encender la luz. Te da miedo la oscuridad.")
+			end	
 
 			for key, value in pairs(salidaNorte) do
 				if vcomando == value then
