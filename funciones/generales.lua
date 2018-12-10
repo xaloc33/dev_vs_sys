@@ -112,8 +112,6 @@ function mostrarSalidas()
 end
 
 
-
-
 function mostrarEntradaTexto()
 	cursor = "#"
 	love.graphics.printf(cursor, 100, 500, love.graphics.getWidth())
@@ -121,7 +119,7 @@ function mostrarEntradaTexto()
 end
 
 function mostrarBarraInfo()
-	love.graphics.printf("Vida: " .. player1.vida, 700, 10, love.graphics.getWidth())
+	love.graphics.printf("UP: " .. player1.vida, 700, 10, love.graphics.getWidth())
 	love.graphics.printf(player1.tipojugador .. " | " .. room.name .. " |" .. " Turno: " .. player1.nturno , 10, 10, love.graphics.getWidth())
 end
 
