@@ -15,6 +15,8 @@ function love.load()
 	player0.nivel = 0
 	player0.horaFecha = "00:00 del 25 de Diciembre del 2028"
 	player0.alcohol = 0
+	player0.fila = 0
+	player0.col = 0
 	
 
 	-- Seteamos variables de jugador 1 iniciales
@@ -26,7 +28,8 @@ function love.load()
 	player1.nivel = 0
 	player1.horaFecha = "00:00 del 25 de Diciembre del 2028"
 	player1.alcohol = 0
-
+	player1.fila = 0
+	player1.col = 0
 
 	-- Seteamos variables de jugador 2 iniciales
 	player2 = {}
@@ -36,8 +39,9 @@ function love.load()
 	player2.nturno = 0
 	player2.nivel = 0
 	player2.horaFecha = "00:00 del 25 de Diciembre del 2028"
-	player1.alcohol = 0
-
+	player2.alcohol = 0
+	player2.fila = 0
+	player2.col = 0
 
 	cargarMusica()
 	font = love.graphics.newFont("fuentes/pxplus_ibm_vga8.ttf", 20)
