@@ -774,6 +774,7 @@ function love.keypressed(key)
 					player1.room = 7
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta005.ogg")
 				end
 			end
 
@@ -782,6 +783,7 @@ function love.keypressed(key)
 					player1.room = 15
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta003.ogg")
 				end
 			end
 			
@@ -790,6 +792,7 @@ function love.keypressed(key)
 					player1.room = 12
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta007.ogg")
 				end
 			end
 			
@@ -798,6 +801,7 @@ function love.keypressed(key)
 					player1.room = 10
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta006.ogg")
 				end
 			end
 			
@@ -820,6 +824,7 @@ function love.keypressed(key)
 					player1.room = 8
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta007.ogg")
 				end
 			end
 
@@ -828,6 +833,7 @@ function love.keypressed(key)
 					player1.room = 16
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta003.ogg")
 				end
 			end
 			
@@ -836,6 +842,16 @@ function love.keypressed(key)
 					player1.room = 11
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta007.ogg")
+				end
+			end
+			
+			for key, value in pairs(salidaEste) do
+				if vcomando == value then
+					player1.room = 12
+					aumentarTurno()
+					comando = ""
+					eliza("No puedes ir al este. Es imposible.")
 				end
 			end
 			
@@ -858,6 +874,7 @@ function love.keypressed(key)
 					player1.room = 9
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta006.ogg")
 				end
 			end
 			
@@ -866,6 +883,25 @@ function love.keypressed(key)
 					player1.room = 14
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta006.ogg")
+				end
+			end
+			
+			for key, value in pairs(salidaOeste) do
+				if vcomando == value then
+					player1.room = 13
+					aumentarTurno()
+					comando = ""
+					eliza("Nada de por esa dirección. No puedes, la pared te lo impide y no puedes ni podrás romperla.")
+				end
+			end
+			
+			for key, value in pairs(salidaSur) do
+				if vcomando == value then
+					player1.room = 13
+					aumentarTurno()
+					comando = ""
+					eliza("Para hacer bien el amor has de ir al sur. Pero no puedes ir al sur de modo que no podrás hacer el amor con quien quieras tú.")
 				end
 			end
 			
@@ -889,6 +925,7 @@ function love.keypressed(key)
 					player1.room = 10
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta004.ogg")
 				end
 			end
 			
@@ -897,6 +934,7 @@ function love.keypressed(key)
 					player1.room = 15
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta003.ogg")
 				end
 			end
 			
@@ -905,6 +943,16 @@ function love.keypressed(key)
 					player1.room = 13
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta006.ogg")
+				end
+			end
+			
+			for key, value in pairs(salidaSur) do
+				if vcomando == value then
+					player1.room = 14
+					aumentarTurno()
+					comando = ""
+					eliza("Al sur ir no puedes.")
 				end
 			end
 			
@@ -927,6 +975,7 @@ function love.keypressed(key)
 					player1.room = 11
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta003.ogg")
 				end
 			end
 			
@@ -935,6 +984,7 @@ function love.keypressed(key)
 					player1.room = 16
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta002.ogg")
 				end
 			end
 			
@@ -943,6 +993,16 @@ function love.keypressed(key)
 					player1.room = 14
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta003.ogg")
+				end
+			end
+			
+			for key, value in pairs(salidaSur) do
+				if vcomando == value then
+					player1.room = 15
+					aumentarTurno()
+					comando = ""
+					eliza("No way.")
 				end
 			end
 			
@@ -965,6 +1025,7 @@ function love.keypressed(key)
 					player1.room = 12
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta003.ogg")
 				end
 			end
 			
@@ -973,6 +1034,25 @@ function love.keypressed(key)
 					player1.room = 15
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta002.ogg")
+				end
+			end
+			
+			for key, value in pairs(salidaSur) do
+				if vcomando == value then
+					player1.room = 16
+					aumentarTurno()
+					comando = ""
+					eliza("No puedes ir por esa dirección ni podrás nunca.")
+				end
+			end
+			
+			for key, value in pairs(salidaEste) do
+				if vcomando == value then
+					player1.room = 16
+					aumentarTurno()
+					comando = ""
+					eliza("Te chocas contra el muro. ¿Te falta un verano?, NO puedes ir por allí.")
 				end
 			end
 
