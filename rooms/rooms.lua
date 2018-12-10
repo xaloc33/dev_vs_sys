@@ -95,7 +95,7 @@ end
 function room4()
 	room = {}
 	room.id = 4
-	room.name = "nombre room 4"
+	room.name = "Baños oscuros"
 	room.norte = 0
 	room.este = 0
 	room.sur = 1
@@ -103,10 +103,10 @@ function room4()
 
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "bla bla bla bla desarrollo"
+		room.descripcion = "Estás en el baño. Las luces se apagan intermitentemente y no te dejan ver todo el tiempo con claridad.\n\nNotas humedad en el suelo, el sonido de un grifo suena. Huele a algo raro pero ahora mismo no consigues poder verlo con claridad ya que la luz parece haberse apagado por completo."
 	else
 	-- Sistemas
-		room.descripcion = "bla bla bla bla sistemas"	
+		room.descripcion = "Estás en el baño. Las luces se apagan intermitentemente y no te dejan ver todo el tiempo con claridad.\n\nNotas humedad en el suelo, el sonido de un grifo suena. Huele a algo raro pero ahora mismo no consigues poder verlo con claridad ya que la luz parece haberse apagado por completo."	
 	end
 
 	mostrarBarraInfo()

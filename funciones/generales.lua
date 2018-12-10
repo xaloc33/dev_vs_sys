@@ -381,7 +381,7 @@ function love.keypressed(key)
 					player1.room = 4
 					aumentarTurno()
 					comando = ""
-					cargarFx("fx/puerta001.ogg")
+					cargarFx("fx/puerta001_agua.ogg")
 				end
 			end
 
@@ -440,7 +440,7 @@ function love.keypressed(key)
 					player1.room = 8
 					aumentarTurno()
 					comando = ""
-					cargarFx("fx/puerta003.ogg")
+					cargarFx("fx/puerta003_agua.ogg")
 				end
 			end
 			
@@ -449,7 +449,7 @@ function love.keypressed(key)
 					player1.room = 3
 					aumentarTurno()
 					comando = ""
-					cargarFx("fx/puerta001.ogg")
+					cargarFx("fx/puerta001_agua2.ogg")
 				end
 			end
 			
@@ -632,7 +632,7 @@ function love.keypressed(key)
 					player1.room = 4
 					aumentarTurno()
 					comando = ""
-					cargarFx("fx/puerta003.ogg")
+					cargarFx("fx/puerta003_agua2.ogg")
 				end
 			end
 
