@@ -1306,61 +1306,23 @@ function comprobarHora()
 	if player1.nturno == 170 then player1.horaFecha = "[ELIZA] 07:00:00 del 25 de Diciembre del 2028" print(player1.horaFecha) end
 end
 
+function calcularCol()
+
+  --player1
+  player1.col = math.fmod(player1.room-1,4)+1
+
+  --player2
+  player2.col = math.fmod(player2.room-1,4)+1
+
+end
 
 function calcularFila()
-	-- player1
-	if player1.room == 1 or player1.room == 2 or player1.room == 3 or player1.room == 4 then
-		player1.fila = 1
-	end
-	if player1.room == 5 or player1.room == 6 or player1.room == 7 or player1.room == 8 then
-		player1.fila = 2
-	end
-	if player1.room == 9 or player1.room == 10 or player1.room == 11 or player1.room == 12 then
-		player1.fila = 3
-	end
-	if player1.room == 13 or player1.room == 14 or player1.room == 15 or player1.room == 16 then
-		player1.fila = 4
-	end
-	-- player2
-	if player2.room == 1 or player2.room == 2 or player2.room == 3 or player2.room == 4 then
-		player2.fila = 1
-	end
-	if player2.room == 5 or player2.room == 6 or player2.room == 7 or player2.room == 8 then
-		player2.fila = 2
-	end
-	if player2.room == 9 or player2.room == 10 or player2.room == 11 or player2.room == 12 then
-		player2.fila = 3
-	end
-	if player2.room == 13 or player2.room == 14 or player2.room == 15 or player2.room == 16 then
-		player2.fila = 4
-	end
+
+  --player1
+  player1.fila = math.fmod(math.floor((player1.room-1)/4),4)+1
+
+  --player2
+  player2.fila = math.fmod(math.floor((player2.room-1)/4),4)+1
+
 end
 
-function calcularCol()
-	-- player1
-	if player1.room == 1 or player1.room == 5 or player1.room == 9 or player1.room == 13 then
-		player1.col = 1
-	end
-	if player1.room == 2 or player1.room == 6 or player1.room == 10 or player1.room == 14 then
-		player1.col = 2
-	end
-	if player1.room == 3 or player1.room == 7 or player1.room == 11 or player1.room == 15 then
-		player1.col = 3
-	end
-	if player1.room == 4 or player1.room == 8 or player1.room == 12 or player1.room == 16 then
-		player1.col = 4
-	end
-	-- player2
-	if player2.room == 1 or player2.room == 5 or player2.room == 9 or player2.room == 13 then
-		player2.col = 1
-	end
-	if player2.room == 2 or player2.room == 6 or player2.room == 10 or player2.room == 14 then
-		player2.col = 2
-	end
-	if player2.room == 3 or player2.room == 7 or player2.room == 11 or player2.room == 15 then
-		player2.col = 3
-	end
-	if player2.room == 4 or player2.room == 8 or player2.room == 12 or player2.room == 16 then
-		player2.col = 4
-	end
-end
