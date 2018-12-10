@@ -103,11 +103,11 @@ function room4()
 
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "Estás en el baño. Las luces se apagan intermitentemente y no te dejan ver todo el tiempo con claridad.\n\nNotas humedad en el suelo, el sonido de un grifo suena. Huele a algo raro pero ahora mismo no consigues poder verlo con claridad ya que la luz parece haberse apagado por completo."
+		room.descripcion = "Estás en el baño. Las luces no funcionan y todo anda en penumbra absoluta.\n\nAl caminar escuchas el sonido de estar pisando agua. Puedes notar la humedad en el ambiente y al fondo de la habitación se escucha el sonido de un grifo abierto.\n\nSi esto es una broma de la gentuza de desarrollo no tiene nada de gracioso."
 	else
 	-- Sistemas
-		room.descripcion = "Estás en el baño. Las luces se apagan intermitentemente y no te dejan ver todo el tiempo con claridad.\n\nNotas humedad en el suelo, el sonido de un grifo suena. Huele a algo raro pero ahora mismo no consigues poder verlo con claridad ya que la luz parece haberse apagado por completo."	
-	end
+		room.descripcion = "Estás en el baño. Las luces no funcionan y todo anda en penumbra absoluta.\n\nAl caminar escuchas el sonido de estar pisando agua. Puedes notar la humedad en el ambiente y al fondo de la habitación se escucha el sonido de un grifo abierto.\n\nSi esto es una broma de la gentuza de desarrollo no tiene nada de gracioso."	
+	end	
 
 	mostrarBarraInfo()
 	mostrarSalidas()
