@@ -470,6 +470,7 @@ function love.keypressed(key)
 					player1.room = 1
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta003.ogg")
 				end
 			end
 
@@ -478,6 +479,7 @@ function love.keypressed(key)
 					player1.room = 9
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta005.ogg")
 				end
 			end
 			
@@ -486,6 +488,16 @@ function love.keypressed(key)
 					player1.room = 6
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta006.ogg")
+				end
+			end
+			
+			for key, value in pairs(salidaOeste) do
+				if vcomando == value then
+					player1.room = 5
+					aumentarTurno()
+					comando = ""
+					eliza("No puedes ir al oeste ahora mismo.")
 				end
 			end
 			
@@ -509,6 +521,7 @@ function love.keypressed(key)
 					player1.room = 2
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta003.ogg")
 				end
 			end
 
@@ -517,6 +530,7 @@ function love.keypressed(key)
 					player1.room = 10
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta007.ogg")
 				end
 			end
 			
@@ -525,6 +539,7 @@ function love.keypressed(key)
 					player1.room = 7
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta008.ogg")
 				end
 			end
 			
@@ -533,6 +548,7 @@ function love.keypressed(key)
 					player1.room = 5
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta006.ogg")
 				end
 			end
 			
@@ -555,6 +571,7 @@ function love.keypressed(key)
 					player1.room = 3
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta003.ogg")
 				end
 			end
 
@@ -563,6 +580,7 @@ function love.keypressed(key)
 					player1.room = 11
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta005.ogg")
 				end
 			end
 			
@@ -571,6 +589,7 @@ function love.keypressed(key)
 					player1.room = 8
 					player1.nturno = player1.nturno + 1
 					comando = ""
+					cargarFx("fx/puerta002.ogg")
 				end
 			end
 			
@@ -579,6 +598,7 @@ function love.keypressed(key)
 					player1.room = 6
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta008.ogg")
 				end
 			end
 			
@@ -596,11 +616,21 @@ function love.keypressed(key)
 				room8()
 			end
 			
+			for key, value in pairs(salidaEste) do
+				if vcomando == value then
+					player1.room = 8
+					aumentarTurno()
+					comando = ""
+					eliza("No puedes ir en esa dirección.")
+				end
+			end
+			
 			for key, value in pairs(salidaNorte) do
 				if vcomando == value then
 					player1.room = 4
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta003.ogg")
 				end
 			end
 
@@ -609,6 +639,7 @@ function love.keypressed(key)
 					player1.room = 12
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta007.ogg")
 				end
 			end
 			
@@ -617,6 +648,7 @@ function love.keypressed(key)
 					player1.room = 7
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta002.ogg")
 				end
 			end
 			
@@ -640,6 +672,7 @@ function love.keypressed(key)
 					player1.room = 5
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta005.ogg")
 				end
 			end
 
@@ -648,6 +681,7 @@ function love.keypressed(key)
 					player1.room = 13
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta006.ogg")
 				end
 			end
 			
@@ -656,6 +690,16 @@ function love.keypressed(key)
 					player1.room = 10
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta008.ogg")
+				end
+			end
+			
+			for key, value in pairs(salidaOeste) do
+				if vcomando == value then
+					player1.room = 9
+					aumentarTurno()
+					comando = ""
+					eliza("Al oeste en Philadelphia crecía y vivía un tipo que si sigues intenando ir al Oeste llamará a la policía. No puedes ir al Oeste.")
 				end
 			end
 			
@@ -679,6 +723,7 @@ function love.keypressed(key)
 					player1.room = 6
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta007.ogg")
 				end
 			end
 
@@ -687,6 +732,7 @@ function love.keypressed(key)
 					player1.room = 14
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta004.ogg")
 				end
 			end
 			
@@ -695,6 +741,7 @@ function love.keypressed(key)
 					player1.room = 11
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta005.ogg")
 				end
 			end
 			
@@ -703,6 +750,7 @@ function love.keypressed(key)
 					player1.room = 9
 					aumentarTurno()
 					comando = ""
+					cargarFx("fx/puerta008.ogg")
 				end
 			end
 			
