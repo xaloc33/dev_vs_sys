@@ -103,10 +103,10 @@ function room4()
 
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "Estás en el baño. Las luces no funcionan y todo anda en penumbra absoluta.\n\nAl caminar escuchas el sonido de estar pisando agua. Puedes notar la humedad en el ambiente y al fondo de la habitación se escucha el sonido de un grifo abierto.\n\nSi esto es una broma de la gentuza de desarrollo no tiene nada de gracioso."
+		room.descripcion = "Estás en el baño. Las luces no funcionan y todo anda en penumbra absoluta.\n\nAl caminar escuchas el sonido de estar pisando agua. Puedes notar la humedad en el ambiente y al fondo de la habitación se escucha el sonido de un grifo abierto.\n\nSi esto es una broma de la gentuza de sistemas no tiene nada de gracioso.\n\nEnchufas el smartphone al enchufe justo al lado del switch de la luz para recargar a ELIZA. Pero no parece que en esta habitación el sistema electrico tenga ahora mismo energia. Lo desenchufas por tanto."
 	else
 	-- Sistemas
-		room.descripcion = "Estás en el baño. Las luces no funcionan y todo anda en penumbra absoluta.\n\nAl caminar escuchas el sonido de estar pisando agua. Puedes notar la humedad en el ambiente y al fondo de la habitación se escucha el sonido de un grifo abierto.\n\nSi esto es una broma de la gentuza de desarrollo no tiene nada de gracioso."	
+		room.descripcion = "Estás en el baño. Las luces no funcionan y todo anda en penumbra absoluta.\n\nAl caminar escuchas el sonido de estar pisando agua. Puedes notar la humedad en el ambiente y al fondo de la habitación se escucha el sonido de un grifo abierto.\n\nSi esto es una broma de la gentuza de desarrollo no tiene nada de gracioso.\n\nEnchufas el smartphone al enchufe justo al lado del switch de la luz para recargar a ELIZA. Pero no parece que en esta habitación el sistema electrico tenga ahora mismo energia. Lo desenchufas por tanto."	
 	end	
 
 	mostrarBarraInfo()
