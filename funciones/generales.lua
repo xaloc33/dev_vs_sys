@@ -1103,38 +1103,38 @@ function comprobarVida()
 end
 
 function comprobarHora()
-	if player1.nturno == 1 then player1.horaFecha = "[ELIZA] 12:01 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 2 then player1.horaFecha = "[ELIZA] 12:02:06 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 3 then player1.horaFecha = "[ELIZA] 12:03 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 4 then player1.horaFecha = "[ELIZA] 12:04 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 5 then player1.horaFecha = "[ELIZA] 12:05:33 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 6 then player1.horaFecha = "[ELIZA] 12:06 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 7 then player1.horaFecha = "[ELIZA] 12:07 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 8 then player1.horaFecha = "[ELIZA] 12:08:21 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 9 then player1.horaFecha = "[ELIZA] 12:09 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 9 then player1.horaFecha = "[ELIZA] 12:10:35 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 10 then player1.horaFecha = "[ELIZA] 12:15:03 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 11 then player1.horaFecha = "[ELIZA] 12:19:38 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 12 then player1.horaFecha = "[ELIZA] 12:22:33 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 13 then player1.horaFecha = "[ELIZA] 12:35 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 14 then player1.horaFecha = "[ELIZA] 12:43 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 15 then player1.horaFecha = "[ELIZA] 12:44 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 16 then player1.horaFecha = "[ELIZA] 12:45 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 17 then player1.horaFecha = "[ELIZA] 12:46 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 18 then player1.horaFecha = "[ELIZA] 12:48 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 19 then player1.horaFecha = "[ELIZA] 12:49 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 20 then player1.horaFecha = "[ELIZA] 12:50 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 21 then player1.horaFecha = "[ELIZA] 12:50:32 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 22 then player1.horaFecha = "[ELIZA] 12:51 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 23 then player1.horaFecha = "[ELIZA] 12:52 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 24 then player1.horaFecha = "[ELIZA] 12:53 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 25 then player1.horaFecha = "[ELIZA] 12:54 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 26 then player1.horaFecha = "[ELIZA] 12:54:14 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 27 then player1.horaFecha = "[ELIZA] 12:54:28 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 28 then player1.horaFecha = "[ELIZA] 12:54:56 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 29 then player1.horaFecha = "[ELIZA] 12:55:23 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 30 then player1.horaFecha = "[ELIZA] 12:55:45 del 25 de Diciembre del 2028" print(player1.horaFecha) end
-	if player1.nturno == 31 then player1.horaFecha = "[ELIZA] 12:55:54 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 1 then player1.horaFecha = "[ELIZA] 00:01 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 2 then player1.horaFecha = "[ELIZA] 00:02:06 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 3 then player1.horaFecha = "[ELIZA] 00:03 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 4 then player1.horaFecha = "[ELIZA] 00:04 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 5 then player1.horaFecha = "[ELIZA] 00:05:33 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 6 then player1.horaFecha = "[ELIZA] 00:06 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 7 then player1.horaFecha = "[ELIZA] 00:07 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 8 then player1.horaFecha = "[ELIZA] 00:08:21 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 9 then player1.horaFecha = "[ELIZA] 00:09 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 9 then player1.horaFecha = "[ELIZA] 00:10:35 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 10 then player1.horaFecha = "[ELIZA] 00:15:03 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 11 then player1.horaFecha = "[ELIZA] 00:19:38 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 12 then player1.horaFecha = "[ELIZA] 00:22:33 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 13 then player1.horaFecha = "[ELIZA] 00:35 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 14 then player1.horaFecha = "[ELIZA] 00:43 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 15 then player1.horaFecha = "[ELIZA] 00:44 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 16 then player1.horaFecha = "[ELIZA] 00:45 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 17 then player1.horaFecha = "[ELIZA] 00:46 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 18 then player1.horaFecha = "[ELIZA] 00:48 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 19 then player1.horaFecha = "[ELIZA] 00:49 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 20 then player1.horaFecha = "[ELIZA] 00:50 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 21 then player1.horaFecha = "[ELIZA] 00:50:32 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 22 then player1.horaFecha = "[ELIZA] 00:51 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 23 then player1.horaFecha = "[ELIZA] 00:52 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 24 then player1.horaFecha = "[ELIZA] 00:53 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 25 then player1.horaFecha = "[ELIZA] 00:54 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 26 then player1.horaFecha = "[ELIZA] 00:54:14 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 27 then player1.horaFecha = "[ELIZA] 00:54:28 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 28 then player1.horaFecha = "[ELIZA] 00:54:56 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 29 then player1.horaFecha = "[ELIZA] 00:55:23 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 30 then player1.horaFecha = "[ELIZA] 00:55:45 del 25 de Diciembre del 2028" print(player1.horaFecha) end
+	if player1.nturno == 31 then player1.horaFecha = "[ELIZA] 00:55:54 del 25 de Diciembre del 2028" print(player1.horaFecha) end
 	if player1.nturno == 32 then player1.horaFecha = "[ELIZA] 01:00:54 del 25 de Diciembre del 2028" print(player1.horaFecha) end
 	if player1.nturno == 33 then player1.horaFecha = "[ELIZA] 01:01:24 del 25 de Diciembre del 2028" print(player1.horaFecha) end
 	if player1.nturno == 34 then player1.horaFecha = "[ELIZA] 01:01:24 del 25 de Diciembre del 2028" print(player1.horaFecha) end

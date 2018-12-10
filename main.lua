@@ -13,7 +13,7 @@ function love.load()
 	player0.tipojugador = "Narradora"
 	player0.nturno = 0
 	player0.nivel = 0
-	player0.horaFecha = "12:30 del 25 de Diciembre del 2028"
+	player0.horaFecha = "00:00 del 25 de Diciembre del 2028"
 	player0.alcohol = 0
 	
 
@@ -24,7 +24,7 @@ function love.load()
 	player1.tipojugador = ""
 	player1.nturno = 0
 	player1.nivel = 0
-	player1.horaFecha = "12:30 del 25 de Diciembre del 2028"
+	player1.horaFecha = "00:00 del 25 de Diciembre del 2028"
 	player1.alcohol = 0
 
 
@@ -35,7 +35,7 @@ function love.load()
 	player2.tipojugador = ""
 	player2.nturno = 0
 	player2.nivel = 0
-	player2.horaFecha = "12:30 del 25 de Diciembre del 2028"
+	player2.horaFecha = "00:00 del 25 de Diciembre del 2028"
 	player1.alcohol = 0
 
 
