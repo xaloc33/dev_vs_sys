@@ -1317,7 +1317,6 @@ function calcularCol()
 end
 
 function calcularFila()
-
   --player1
   player1.fila = math.fmod(math.floor((player1.room-1)/4),4)+1
 
