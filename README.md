@@ -28,3 +28,8 @@ $ git clone https://github.com/fantalavapies/dev_vs_sys/
 $ cd dev_vs_sys
 $ love .
 </pre>
+
+## Un poco de información sobre como jugar
+
+Para ir al norte se puede escribir "ir al norte", "norte" o simplemente n. Lo mismo para sur, este y oeste.
+De esa forma te mueves por diferentes salas.
