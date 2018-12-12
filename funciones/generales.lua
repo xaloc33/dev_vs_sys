@@ -1318,7 +1318,9 @@ function calcularCol()
 
 end
 
+
 function calcularFila()
+  
   --player1
   player1.fila = math.fmod(math.floor((player1.room-1)/4),4)+1
 
@@ -1326,6 +1328,7 @@ function calcularFila()
   player2.fila = math.fmod(math.floor((player2.room-1)/4),4)+1
 
 end
+
 
 function inicioPlayer2()
   calcularFila()
@@ -1342,3 +1345,4 @@ function inicioPlayer2()
   end
 
 end
+
