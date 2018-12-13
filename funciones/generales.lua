@@ -151,6 +151,7 @@ function love.keypressed(key)
 					--player1.room = 1
 					player1.room = love.math.random(1, 16)
 					player2.room = love.math.random(1, 16)
+					inicioPlayer2()
 					player1.nturno = 0
 					player1.tipojugador = "SysAdmin"
 					player2.tipojugador = "Developer"
@@ -164,6 +165,7 @@ function love.keypressed(key)
 					--player1.room = 1
 					player1.room = love.math.random(1, 16)
 					player2.room = love.math.random(1, 16)
+					inicioPlayer2()
 					player1.nturno = 0
 					player1.tipojugador = "Developer"
 					player2.tipojugador = "SysAdmin"
@@ -1316,12 +1318,31 @@ function calcularCol()
 
 end
 
+
 function calcularFila()
+  
   --player1
   player1.fila = math.fmod(math.floor((player1.room-1)/4),4)+1
 
   --player2
   player2.fila = math.fmod(math.floor((player2.room-1)/4),4)+1
+
+end
+
+
+function inicioPlayer2()
+  calcularFila()
+  calcularCol()
+
+  if player1.fila == player2.fila or player1.col == player2.col then
+
+    while player1.fila == player2.fila or player1.col == player2.col do
+      player2.room = love.math.random(1, 16)
+      calcularFila()
+      calcularCol()
+    end
+
+  end
 
 end
 
