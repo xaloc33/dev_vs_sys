@@ -283,7 +283,7 @@ function love.keypressed(key)
 			if vcomando == "MIRAR JUEGO" or vcomando == "MIRAR JUEGOS" or vcomando == "MIRAR LOS JUEGOS" or vcomando == "VER JUEGOS" or vcomando == "EXAMINAR LOS JUEGOS" or vcomando == "EXAMINAR JUEGOS" then
 				aumentarTurno()
 				room1()
-				eliza("Algunos de los juegos en las estanterias son: La diosa de Cozumel, Don Quijote, Red Moon, Lords of time, Colossal Adventure, Shogun, Jabato, Zork, The Hobbit, Kingdom of Hamil, The Count, The Pawn, Dracula, Robin of Sherlock, ...")
+				eliza("Algunos de los juegos en las estanterias son: La diosa de Cozumel, Don Quijote, Red Moon, Lords of time, Colossal Adventure, Shogun, Jabato, Zork, The Hobbit, Kingdom of Hamil, The Pawn y Dracula.")
 			end
 			
 			if vcomando == "LIMPIAR EL POLVO" or vcomando == "LIMPIAR POLVO" or vcomando == "QUITAR POLVO" or vcomando == "QUITAR EL POLVO" or vcomando == "SOPLAR EL POLVO" or vcomando == "SACUDIR EL POLVO" then
