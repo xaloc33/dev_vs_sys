@@ -232,6 +232,7 @@ function love.keypressed(key)
 					player1.tipojugador = "SysAdmin"
 					player2.tipojugador = "Developer"
 					cargarFx("fx/puerta001.ogg")
+					habla_eliza = ""
 					comando = ""
 				end
 			end
@@ -247,6 +248,7 @@ function love.keypressed(key)
 					player2.tipojugador = "SysAdmin"
 					comando = ""
 					cargarFx("fx/puerta002.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -301,6 +303,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta002.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -328,6 +331,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -432,6 +436,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta004.ogg")
+					habla_eliza = ""
 				end
 			end
 
@@ -441,6 +446,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -450,6 +456,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta002.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -503,6 +510,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta001_agua.ogg")
+					habla_eliza = ""
 				end
 			end
 
@@ -512,6 +520,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -521,6 +530,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta004.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -567,6 +577,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003_agua.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -576,6 +587,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta001_agua2.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -599,6 +611,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003.ogg")
+					habla_eliza = ""
 				end
 			end
 
@@ -608,6 +621,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta005.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -617,6 +631,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta006.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -650,6 +665,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003.ogg")
+					habla_eliza = ""
 				end
 			end
 
@@ -659,6 +675,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta007.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -668,6 +685,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta008.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -677,6 +695,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta006.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -700,6 +719,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003.ogg")
+					habla_eliza = ""
 				end
 			end
 
@@ -709,6 +729,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta005.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -718,6 +739,7 @@ function love.keypressed(key)
 					player1.nturno = player1.nturno + 1
 					comando = ""
 					cargarFx("fx/puerta002.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -727,6 +749,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta008.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -759,6 +782,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003_agua2.ogg")
+					habla_eliza = ""
 				end
 			end
 
@@ -768,6 +792,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta007.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -777,6 +802,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta002.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -801,6 +827,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta005.ogg")
+					habla_eliza = ""
 				end
 			end
 
@@ -810,6 +837,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta006.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -819,6 +847,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta008.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -852,6 +881,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta007.ogg")
+					habla_eliza = ""
 				end
 			end
 
@@ -861,6 +891,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta004.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -870,6 +901,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta005.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -879,6 +911,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta008.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -903,6 +936,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta005.ogg")
+					habla_eliza = ""
 				end
 			end
 
@@ -912,6 +946,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -921,6 +956,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta007.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -930,6 +966,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta006.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -953,6 +990,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta007.ogg")
+					habla_eliza = ""
 				end
 			end
 
@@ -962,6 +1000,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -971,6 +1010,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta007.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -1003,6 +1043,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta006.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -1012,6 +1053,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta006.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -1054,6 +1096,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta004.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -1063,6 +1106,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -1072,6 +1116,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta006.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -1104,6 +1149,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -1113,6 +1159,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta002.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -1122,6 +1169,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -1154,6 +1202,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta003.ogg")
+					habla_eliza = ""
 				end
 			end
 			
@@ -1163,6 +1212,7 @@ function love.keypressed(key)
 					aumentarTurno()
 					comando = ""
 					cargarFx("fx/puerta002.ogg")
+					habla_eliza = ""
 				end
 			end
 			
