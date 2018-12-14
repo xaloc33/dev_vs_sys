@@ -79,10 +79,10 @@ function room3()
 
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "La sala es bastante pequeña y está completamente vacía.\n\nSolamente un cuadro eléctrico sin tapa se ve colgando en la pared.\n\nUn ejemplo más de como se toman la seguridad en la empresa."
+		room.descripcion = "La sala es bastante pequeña y está completamente vacía.\n\nSolamente un cuadro eléctrico sin tapa se ve colgando en la pared.\n\nUn ejemplo más de como se toman la seguridad en la empresa. Seguramente por la influencia de esa gente chapuzera de sistemas.\n\nSalidas: Este, Oeste y Sur"
 	else
 	-- Sistemas
-		room.descripcion = "La sala es bastante pequeña y está completamente vacía.\n\nSolamente un cuadro eléctrico sin tapa se ve colgando en la pared.\n\nUn ejemplo más de como se toman la seguridad en la empresa."	
+		room.descripcion = "La sala es bastante pequeña y está completamente vacía.\n\nSolamente un cuadro eléctrico sin tapa se ve colgando en la pared.\n\nUn ejemplo más de como se toman la seguridad en la empresa. Seguramente por la influencia de esa gente chapuzera de desarrollo.\n\nSalidas: Este, Oeste y Sur"	
 	end
 
 	mostrarBarraInfo()
@@ -119,7 +119,7 @@ end
 function room5()
 	room = {}
 	room.id = 5
-	room.name = "nombre room 5"
+	room.name = "Habitación vacía ala Oeste"
 	room.norte = 1
 	room.este = 1
 	room.sur = 1
@@ -127,10 +127,10 @@ function room5()
 
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "bla bla bla bla desarrollo"
+		room.descripcion = "La habitación está completamente vacía.\n\nSalidas: Norte, Este y Sur"
 	else
 	-- Sistemas
-		room.descripcion = "bla bla bla bla sistemas"	
+		room.descripcion = "La habitación está completamente vacía.\n\nSalidas: Norte, Este y Sur"	
 	end
 
 	mostrarBarraInfo()
@@ -263,7 +263,7 @@ end
 function room11()
 	room = {}
 	room.id = 11
-	room.name = "nombre room 11"
+	room.name = "Habitación vacía"
 	room.norte = 1
 	room.este = 1
 	room.sur = 1
@@ -271,10 +271,10 @@ function room11()
 	
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "bla bla bla bla desarrollo"
+		room.descripcion = "La habitación está completamente vacía.\n\nSalidas: Norte, Este, Oeste y Sur"
 	else
 	-- Sistemas
-		room.descripcion = "bla bla bla bla sistemas"	
+		room.descripcion = "La habitación está completamente vacía.\n\nSalidas: Norte, Este, Oeste y Sur"	
 	end
 
 	mostrarBarraInfo()
