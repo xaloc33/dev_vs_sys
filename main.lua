@@ -34,7 +34,7 @@ function love.load()
 	-- Seteamos variables de jugador 2 iniciales
 	player2 = {}
 	player2.vida = 100
-	player2.room = 0
+	player2.room = -1
 	player2.tipojugador = ""
 	player2.nturno = 0
 	player2.nivel = 0

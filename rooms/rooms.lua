@@ -7,6 +7,7 @@ function room0()
 	love.graphics.printf(inicio, 220, 230, love.graphics.getWidth())
 	love.graphics.printf(cursor, 220, 260, love.graphics.getWidth())
 	love.graphics.printf(comando, 235, 260, love.graphics.getWidth())
+	mostrarElizaBarra()
 end
 
 function room1()
@@ -30,6 +31,7 @@ function room1()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -64,6 +66,7 @@ function room2()
         mostrarBarraInfo()
         mostrarSalidas()
         mostrarDescripcion()
+        mostrarElizaBarra()
         mostrarEntradaTexto()
 
 end
@@ -71,7 +74,7 @@ end
 function room3()
 	room = {}
 	room.id = 3
-	room.name = "nombre room 3"
+	room.name = "Cuadro eléctrico zona norte"
 	room.norte = 0
 	room.este = 1
 	room.sur = 1
@@ -79,15 +82,16 @@ function room3()
 
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "bla bla bla bla desarrollo"
+		room.descripcion = "La sala es bastante pequeña y está completamente vacía.\n\nSolamente un cuadro eléctrico sin tapa se ve colgando en la pared.\n\nUn ejemplo más de como se toman la seguridad en la empresa. Seguramente por la influencia de esa gente chapuzera de sistemas.\n\nSalidas: Este, Oeste y Sur"
 	else
 	-- Sistemas
-		room.descripcion = "bla bla bla bla sistemas"	
+		room.descripcion = "La sala es bastante pequeña y está completamente vacía.\n\nSolamente un cuadro eléctrico sin tapa se ve colgando en la pared.\n\nUn ejemplo más de como se toman la seguridad en la empresa. Seguramente por la influencia de esa gente chapuzera de desarrollo.\n\nSalidas: Este, Oeste y Sur"	
 	end
 
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 	
 end
@@ -112,6 +116,7 @@ function room4()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -119,7 +124,7 @@ end
 function room5()
 	room = {}
 	room.id = 5
-	room.name = "nombre room 5"
+	room.name = "Habitación vacía ala Oeste"
 	room.norte = 1
 	room.este = 1
 	room.sur = 1
@@ -127,15 +132,16 @@ function room5()
 
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "bla bla bla bla desarrollo"
+		room.descripcion = "La habitación está completamente vacía. Hace años esto era la sala en la que trabajaba el departamento de comunicación.\n\nEstaba llena de vida y humanidad. Pero poco a poco los servicios de comunicación se externalizaron y fueron sustituidos por algoritmos.\n\nSolamente se ve en una esquina de la habitación una cesta con un lazo. Recuerda a aquellos tiempos en los que las empresas propinaban por navidad a sus equipos con ese tipo de regalos.\n\nSalidas: Norte, Este y Sur"
 	else
 	-- Sistemas
-		room.descripcion = "bla bla bla bla sistemas"	
+		room.descripcion = "La habitación está completamente vacía. Hace años esto era la sala en la que trabajaba el departamento de comunicación.\n\nEstaba llena de vida y humanidad. Pero poco a poco los servicios de comunicación se externalizaron y fueron sustituidos por algoritmos.\n\nSolamente se ve en una esquina de la habitación una cesta con un lazo. Recuerda a aquellos tiempos en los que las empresas propinaban por navidad a sus equipos con ese tipo de regalos.\n\nSalidas: Norte, Este y Sur"	
 	end
 
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -160,6 +166,7 @@ function room6()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -184,6 +191,7 @@ function room7()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -208,6 +216,7 @@ function room8()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -232,6 +241,7 @@ function room9()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -256,6 +266,7 @@ function room10()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -263,7 +274,7 @@ end
 function room11()
 	room = {}
 	room.id = 11
-	room.name = "nombre room 11"
+	room.name = "Habitación vacía"
 	room.norte = 1
 	room.este = 1
 	room.sur = 1
@@ -271,15 +282,16 @@ function room11()
 	
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "bla bla bla bla desarrollo"
+		room.descripcion = "La habitación está completamente vacía.\n\nSalidas: Norte, Este, Oeste y Sur"
 	else
 	-- Sistemas
-		room.descripcion = "bla bla bla bla sistemas"	
+		room.descripcion = "La habitación está completamente vacía.\n\nSalidas: Norte, Este, Oeste y Sur"	
 	end
 
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -304,6 +316,7 @@ function room12()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -328,6 +341,7 @@ function room13()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 	
 end
@@ -352,6 +366,7 @@ function room14()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 	
 end
@@ -376,6 +391,7 @@ function room15()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 	
 end
@@ -400,5 +416,6 @@ function room16()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 end
