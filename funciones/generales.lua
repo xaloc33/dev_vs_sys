@@ -463,6 +463,22 @@ function love.keypressed(key)
 				eliza("Es un cuadro eléctrico que afecta a varias habitaciones de la zona norte. La energía del baño está desactivada")
 			end
 
+			if vcomando == "MIRAR TAPA" or vcomando == "EXAMINAR TAPA" or vcomando == "COMPROBAR TAPA" or vcomando == "MIRAR TAPAS" or vcomando == "EXAMINAR TAPAS" or vcomando == "MIRAR LA TAPA" or vcomando == "EXAMINAR LA TAPA" or vcomando == "COMPROBAR LA TAPA" then
+				aumentarTurno()
+				eliza("La tapa está suelta y deja el cuadro disponible para su manipulación.")
+			end
+
+			if vcomando == "AGARRAR TAPA" or vcomando == "COGER TAPA" or vcomando == "COGER LA TAPA" or vcomando == "COGER LATAPA" or vcomando == "COGERLATAPA" or vcomando == "COGERTAPA" or vcomando == "COGERLA TAPA" or vcomando == "COJER TAPA" or vcomando == "COJER LA TAPA" then
+				aumentarTurno()
+				eliza("No puedes coger eso. No podrás nunca de modo que no pierdas el tiempo.")
+			end
+			
+			if vcomando == "COGER CUADRO" or vcomando == "COGER PLOMO" or vcomando == "COGER EL CUADRO" or vcomando == "COGER EL CUADRO ELECTRICO" or vcomando == "COGER CUADRO ELECTRICO" or vcomando == "COGER CUADRO ELÉCTRICO" or vcomando == "COGER EL CUADRO DE LUCES" or vcomando == "AGARRAR CUADRO" or vcomando == "AGARRAR EL CUADRO" then
+				aumentarTurno()
+				eliza("No puedes coger eso, corres peligro de muerte. Es muy peligroso.")
+			end
+
+
 			for key, value in pairs(salidaNorte) do
 				if vcomando == value then
 					player1.room = 3
