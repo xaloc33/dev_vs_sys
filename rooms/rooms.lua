@@ -132,7 +132,7 @@ function room5()
 
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "La habitación está completamente vacía.\n\nSalidas: Norte, Este y Sur"
+		room.descripcion = "La habitación está completamente vacía. Hace años esto era la habitación en la que trabajaba el departamento de comunicación.\n\nEstaba llena de vida y humanidad. Pero poco a poco los servicios de comunicación se externalizaron y fueron sustituidos por algoritmos.\n\nSolamente se ve en una esquina de la habitación una cesta con un lazo. Recuerda a aquellos tiempos en los que las empresas propinaban por navidad a sus equipos con ese tipo de regalos.\n\nSalidas: Norte, Este y Sur"
 	else
 	-- Sistemas
 		room.descripcion = "La habitación está completamente vacía.\n\nSalidas: Norte, Este y Sur"	
