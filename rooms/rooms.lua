@@ -7,6 +7,7 @@ function room0()
 	love.graphics.printf(inicio, 220, 230, love.graphics.getWidth())
 	love.graphics.printf(cursor, 220, 260, love.graphics.getWidth())
 	love.graphics.printf(comando, 235, 260, love.graphics.getWidth())
+	mostrarElizaBarra()
 end
 
 function room1()
@@ -30,6 +31,7 @@ function room1()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -64,6 +66,7 @@ function room2()
         mostrarBarraInfo()
         mostrarSalidas()
         mostrarDescripcion()
+        mostrarElizaBarra()
         mostrarEntradaTexto()
 
 end
@@ -88,6 +91,7 @@ function room3()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 	
 end
@@ -112,6 +116,7 @@ function room4()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -136,6 +141,7 @@ function room5()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -160,6 +166,7 @@ function room6()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -184,6 +191,7 @@ function room7()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -208,6 +216,7 @@ function room8()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -232,6 +241,7 @@ function room9()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -256,6 +266,7 @@ function room10()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -280,6 +291,7 @@ function room11()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -304,6 +316,7 @@ function room12()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 
 end
@@ -328,6 +341,7 @@ function room13()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 	
 end
@@ -352,6 +366,7 @@ function room14()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 	
 end
@@ -376,6 +391,7 @@ function room15()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 	
 end
@@ -400,5 +416,6 @@ function room16()
 	mostrarBarraInfo()
 	mostrarSalidas()
 	mostrarDescripcion()
+	mostrarElizaBarra()
 	mostrarEntradaTexto()
 end

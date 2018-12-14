@@ -4,6 +4,7 @@ end
 
 
 function eliza(r)
+	habla_eliza_old = habla_eliza
 	habla_eliza = "[ELIZA] " .. r
 	print(habla_eliza)
 end
@@ -181,8 +182,8 @@ end
 
 function mostrarEntradaTexto()
 	cursor = "#"
-	love.graphics.printf(cursor, 100, 500, love.graphics.getWidth())
-	love.graphics.printf(comando, 115, 500, love.graphics.getWidth())
+	love.graphics.printf(cursor, 100, 480, love.graphics.getWidth())
+	love.graphics.printf(comando, 115, 480, love.graphics.getWidth())
 end
 
 function mostrarBarraInfo()
@@ -191,7 +192,15 @@ function mostrarBarraInfo()
 end
 
 function mostrarDescripcion()
-	love.graphics.printf(room.descripcion, 100, 100, 600)
+	love.graphics.printf(room.descripcion, 100, 70, 600)
+end
+
+function mostrarElizaBarra()
+	if habla_eliza == null then
+		habla_eliza = ""
+	else
+		love.graphics.printf(habla_eliza, 100, 520, 550)
+	end
 end
 
 function love.keypressed(key)
