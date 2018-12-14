@@ -453,10 +453,14 @@ function love.keypressed(key)
 			cargarSalidas()
 			if player1.alcohol == 1 then player1.alcohol = 0 end
 
-
-			if vcomando == "MIRAR" then
+			if vcomando == "MIRAR" or vcomando == "EXAMINAR" then
 				aumentarTurno()
 				room3()
+			end
+			
+			if vcomando == "MIRAR CUADRO" or vcomando == "MIRAR PLOMO" or vcomando == "MIRAR CUADRO DE LUCES" or vcomando == "MIRAR CUADRO ELECTRICO" or vcomando == "MIRAR CUADRO ELÉCTRICO" or vcomando == "EXAMINAR CUADRO" or vcomando == "EXAMINAR PLOMO" or vcomando == "EXAMINAR CUADRO ELECTRICO" or vcomando == "EXAMINAR CUADRO ELÉCTRICO" then
+				aumentarTurno()
+				eliza("Es un cuadro eléctrico que afecta a varias habitaciones de la zona norte. La energía del baño está desactivada")
 			end
 
 			for key, value in pairs(salidaNorte) do
