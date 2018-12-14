@@ -71,7 +71,7 @@ end
 function room3()
 	room = {}
 	room.id = 3
-	room.name = "nombre room 3"
+	room.name = "Cuadro eléctrico zona norte"
 	room.norte = 0
 	room.este = 1
 	room.sur = 1
@@ -79,10 +79,10 @@ function room3()
 
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "bla bla bla bla desarrollo"
+		room.descripcion = "La sala es bastante pequeña y está completamente vacía.\n\nSolamente un cuadro eléctrico sin tapa se ve colgando en la pared.\n\nUn ejemplo más de como se toman la seguridad en la empresa."
 	else
 	-- Sistemas
-		room.descripcion = "bla bla bla bla sistemas"	
+		room.descripcion = "La sala es bastante pequeña y está completamente vacía.\n\nSolamente un cuadro eléctrico sin tapa se ve colgando en la pared.\n\nUn ejemplo más de como se toman la seguridad en la empresa."	
 	end
 
 	mostrarBarraInfo()
