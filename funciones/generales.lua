@@ -12,6 +12,47 @@ function aumentarTurno()
 	player1.nturno = player1.nturno + 1
 	calcularFila()
 	calcularCol()
+	desplazarPlayer2()
+end
+
+
+function desplazarPlayer2()
+	if player1.room ~= player2.room then
+		calcularCol()
+		calcularFila()
+		--print("P1 - Room: " .. player1.room .. " Fila: " .. player1.fila .. " Col: " .. player1.col)
+		--print("P2 - Room: " .. player2.room .. " Fila: " .. player2.fila .. " Col: " .. player2.col)
+		comprobarSalidasPlayer2(player2.room)
+		if salidasPosiblesPlayer2 ~= null then
+			local opciones = {}
+			for key, value in pairs(salidasPosiblesPlayer2) do
+				table.insert(opciones, key)
+			end
+			player2.room = salidasPosiblesPlayer2[opciones[math.random(#opciones)]]
+		end
+	end
+end
+
+function comprobarSalidasPlayer2(rp2)
+	if player2.room == 1 then salidasPosiblesPlayer2 = {1,2,5} end
+	if player2.room == 2 then salidasPosiblesPlayer2 = {2,1,3,6} end
+	if player2.room == 3 then salidasPosiblesPlayer2 = {3,2,4,7} end	
+	if player2.room == 4 then salidasPosiblesPlayer2 = {4,3,8} end
+	
+	if player2.room == 5 then salidasPosiblesPlayer2 = {5,1,6,9} end
+	if player2.room == 6 then salidasPosiblesPlayer2 = {6,2,7,10,5} end
+	if player2.room == 7 then salidasPosiblesPlayer2 = {7,3,8,11,6} end	
+	if player2.room == 8 then salidasPosiblesPlayer2 = {8,4,12,7} end
+	
+	if player2.room == 9 then salidasPosiblesPlayer2 = {9,5,10,13} end
+	if player2.room == 10 then salidasPosiblesPlayer2 = {10,6,11,14,9} end
+	if player2.room == 11 then salidasPosiblesPlayer2 = {11,7,12,15,10} end	
+	if player2.room == 12 then salidasPosiblesPlayer2 = {12,8,16,11} end
+	
+	if player2.room == 13 then salidasPosiblesPlayer2 = {13,9,14} end
+	if player2.room == 14 then salidasPosiblesPlayer2 = {14,10,15,13} end
+	if player2.room == 15 then salidasPosiblesPlayer2 = {15,11,16,14} end	
+	if player2.room == 16 then salidasPosiblesPlayer2 = {16,12,15} end
 end
 
 function respuestasComandosGenericos()
