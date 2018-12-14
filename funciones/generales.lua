@@ -17,10 +17,10 @@ end
 
 
 function desplazarPlayer2()
+	calcularCol()
+	calcularFila()
 	if player1.room ~= player2.room then
-		if player1.nturno < 60 then
-			calcularCol()
-			calcularFila()
+		if player1.nturno < 20 then
 			print("P1 - Room: " .. player1.room .. " Fila: " .. player1.fila .. " Col: " .. player1.col)
 			print("P2 - Room: " .. player2.room .. " Fila: " .. player2.fila .. " Col: " .. player2.col)
 			comprobarSalidasPlayer2(player2.room)
@@ -32,8 +32,13 @@ function desplazarPlayer2()
 				player2.room = salidasPosiblesPlayer2[opciones[math.random(#opciones)]]
 			end
 		else
-			print("aqui se llamaría a la función perseguir player")
+			print("funcion perseguir activada")
+			print("P1 - Room: " .. player1.room .. " Fila: " .. player1.fila .. " Col: " .. player1.col)
+			print("P2 - Room: " .. player2.room .. " Fila: " .. player2.fila .. " Col: " .. player2.col)
+			perseguirPlayer1()
 		end
+	else
+		print("aquí irá la función de lo que sea cuando se encuentran ambos jugadores. De momento player2 ya no se mueve si se está en la misma habitación")
 	end
 end
 
@@ -57,6 +62,23 @@ function comprobarSalidasPlayer2(rp2)
 	if player2.room == 14 then salidasPosiblesPlayer2 = {14,10,15,13} end
 	if player2.room == 15 then salidasPosiblesPlayer2 = {15,11,16,14} end	
 	if player2.room == 16 then salidasPosiblesPlayer2 = {16,12,15} end
+end
+
+function perseguirPlayer1()
+	if player1.fila == player2.fila then
+		if player1.col - player2.col < 0 then
+			player2.col = player2.col - 1
+		else
+			player2.col = player2.col + 1
+		end
+	else
+		if player1.fila - player2.fila < 0 then
+			player2.fila = player2.fila - 1
+		else
+			player2.fila = player2.fila + 1
+		end
+	end
+	player2.room = (player2.fila - 1)*4 + player2.col
 end
 
 function respuestasComandosGenericos()
