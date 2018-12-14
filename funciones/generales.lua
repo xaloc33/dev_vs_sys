@@ -18,17 +18,21 @@ end
 
 function desplazarPlayer2()
 	if player1.room ~= player2.room then
-		calcularCol()
-		calcularFila()
-		--print("P1 - Room: " .. player1.room .. " Fila: " .. player1.fila .. " Col: " .. player1.col)
-		--print("P2 - Room: " .. player2.room .. " Fila: " .. player2.fila .. " Col: " .. player2.col)
-		comprobarSalidasPlayer2(player2.room)
-		if salidasPosiblesPlayer2 ~= null then
-			local opciones = {}
-			for key, value in pairs(salidasPosiblesPlayer2) do
-				table.insert(opciones, key)
+		if player1.nturno < 60 then
+			calcularCol()
+			calcularFila()
+			print("P1 - Room: " .. player1.room .. " Fila: " .. player1.fila .. " Col: " .. player1.col)
+			print("P2 - Room: " .. player2.room .. " Fila: " .. player2.fila .. " Col: " .. player2.col)
+			comprobarSalidasPlayer2(player2.room)
+			if salidasPosiblesPlayer2 ~= null then
+				local opciones = {}
+				for key, value in pairs(salidasPosiblesPlayer2) do
+					table.insert(opciones, key)
+				end
+				player2.room = salidasPosiblesPlayer2[opciones[math.random(#opciones)]]
 			end
-			player2.room = salidasPosiblesPlayer2[opciones[math.random(#opciones)]]
+		else
+			print("aqui se llamaría a la función perseguir player")
 		end
 	end
 end
