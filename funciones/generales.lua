@@ -274,10 +274,34 @@ function love.keypressed(key)
 				room1()
 			end
 			
-			if vcomando == "MIRAR ESTANTERIA" or vcomando == "MIRAR LA ESTANTERIA" or vcomando == "MIRAR ESTANTERIAS" or vcomando == "MIRAR LAS ESTANTERIAS" or vcomando == "MIRAR ESTANTES" then
+			if vcomando == "CONTEMPLAR ESTANTES" or vcomando == "CONTEMPLAR ESTANTERIAS" or vcomando == "CONTEMPLAR ESTANTERIA" or vcomando == "MIRAR ESTANTE" or vcomando == "VER ESTANTERIAS" or vcomando == "VER ESTANTERIA" or vcomando == "MIRAR ESTANTERIA" or vcomando == "MIRAR LA ESTANTERIA" or vcomando == "MIRAR ESTANTERIAS" or vcomando == "MIRAR LAS ESTANTERIAS" or vcomando == "MIRAR ESTANTES" then
 				aumentarTurno()
 				room1()
 				eliza("Las estanterias tienen una gruesa capa de polvo y mierda de roedores. Son de Metal y parecen bastante resistentes.")
+			end
+						
+			if vcomando == "MIRAR LA CAJA DE CINTAS" or vcomando == "MIRAR LAS CAJAS DE CINTAS" or vcomando == "MIRAR LA CINTA" or vcomando == "MIRAR LAS CINTAS" or vcomando == "CONTEMPLAR CINTAS" or vcomando == "CONTEMPLAR CINTA" or vcomando == "EXAMINAR CINTAS" or vcomando == "EXAMINAR CINTA" or vcomando == "VER CINTA" or vcomando == "MIRAR CINTA" or vcomando == "MIRAR CINTAS" or vcomando == "VER CINTAS" then
+				aumentarTurno()
+				room1()
+				eliza("Cintas con software viejo. Hoy todo está ya en la nube. Olvida esas cintas.")
+			end
+			
+			if vcomando == "VER UN DISQUETE" or vcomando == "VER DISQUETES" or vcomando == "VER LOS DISQUETES" or vcomando == "EXAMINAR LOS DISQUETES" or vcomando == "EXAMINAR DISQUETES" or vcomando == "MIRAR UN DISQUETE" or vcomando == "MIRAR LOS DISQUETES" or vcomando == "MIRAR DISQUETES" or vcomando == "MIRAR UN DISCO" or vcomando == "MIRAR LOS DISCOS" or vcomando == "MIRAR DISCOS" or vcomando == "MIRAR DISCO" then
+				aumentarTurno()
+				room1()
+				eliza("Contienen software obsoleto. La nube es el futuro, lleva todo a la nube.")
+			end
+			
+			if vcomando == "MIRAR A LAS CAJAS DE DISQUETES" or vcomando == "MIRAR A LAS CAJAS DE DISCOS" or vcomando == "MIRAR A LAS CAJAS DE SOFTWARE" or vcomando == "MIRAR A LA CAJA" or vcomando == "MIRAR CAJAS CON SOFTWARE" or vcomando == "MIRAR CAJAS DE SOFTWARE" or vcomando == "MIRAR LAS CAJAS" or vcomando == "MIRAR CAJAS" or vcomando == "MIRAR CAJAS DE DISQUETES" then
+				aumentarTurno()
+				room1()
+				eliza("Cajas en mal estado. Con software inferior y anticuado que no fue diseñado para estar en la nube.")
+			end
+			
+			if vcomando == "MIRAR DOCUMENTACION DE VIEJOS PROYECTOS" or vcomando == "MIRAR LA DOCUMENTACION" or vcomando == "MIRAR LA DOCUMENTACIÓN" or vcomando == "MIRAR DOCUMENTACION" or vcomando == "MIRAR DOCUMENTACIÓN" or vcomando == "MIRAR DOCUMENTACIÓN DE VIEJOS PROYECTOS" or vcomando == "DOCUMENTACIÓN" or vcomando == "MIRAR PROYECTOS" or vcomando == "MIRAR LOS PROYECTOS" or vcomando == "MIRAR PROYECTOS" or vcomando == "VIEJOS PROYECTOS" or vcomando == "PROYECTOS" then
+				aumentarTurno()
+				room1()
+				eliza("Proyectos archivados. A nadie le interesan ya. No tienen valor alguno. La nube es el futuro.")
 			end
 			
 			if vcomando == "MIRAR JUEGO" or vcomando == "MIRAR JUEGOS" or vcomando == "MIRAR LOS JUEGOS" or vcomando == "VER JUEGOS" or vcomando == "EXAMINAR LOS JUEGOS" or vcomando == "EXAMINAR JUEGOS" then
