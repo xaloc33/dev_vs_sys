@@ -530,6 +530,10 @@ function love.keypressed(key)
 				eliza("No puedes coger eso, corres peligro de muerte. Es muy peligroso.")
 			end
 
+			if vcomando == "OLER" or vcomando == "OLFATEAR" or vcomando == "OLER HABITACIÓN" or vcomando == "OLER HABITACION" or vcomando == "OLER AMBIENTE" or vcomando == "OLISQUEAR" then
+				aumentarTurno()
+				eliza("Huele a fiesta. El olor parece que viene de la habitación del oeste.")
+			end
 
 			for key, value in pairs(salidaNorte) do
 				if vcomando == value then
@@ -693,6 +697,11 @@ function love.keypressed(key)
 			if vcomando == "MIRAR" then
 				aumentarTurno()
 				room6()
+			end
+						
+			if vcomando == "OLER" or vcomando == "OLFATEAR" or vcomando == "OLER HABITACIÓN" or vcomando == "OLER HABITACION" or vcomando == "OLER AMBIENTE" or vcomando == "OLISQUEAR" then
+				aumentarTurno()
+				eliza("Huele a fiesta. El olor parece que viene del norte.")
 			end
 			
 			for key, value in pairs(salidaNorte) do
