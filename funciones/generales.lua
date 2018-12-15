@@ -321,6 +321,18 @@ function love.keypressed(key)
 				eliza("El olor parece que viene del este.")
 			end
 			
+			if vcomando == "COGER ELEMENTOS" or vcomando == "COGER COSAS" then
+				aumentarTurno()
+				room1()
+				eliza("En esta habitación no podrás coger cosas. Pero trata de ser más explicito de todos modos.")
+			end
+									
+			if vcomando == "COGER EL SOFTWARE" or vcomando == "COGER SOFTWARE" or vcomando == "COGER JUEGOS" or vcomando == "COGER DISCO" or vcomando == "COGER DISQUETE" or vcomando == "COGER UN DISQUETE" or vcomando == "COGER LOS DISQUETES" or vcomando == "COGER DISQUETES" or vcomando == "COGER DISCOS" then
+				aumentarTurno()
+				room1()
+				eliza("No puedes coger nada. Es ilegal.")
+			end
+			
 			for key, value in pairs(salidaEste) do
 				if vcomando == value then
 					player1.room = 2
