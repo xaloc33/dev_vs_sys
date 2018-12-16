@@ -1,0 +1,6 @@
+En este directorio se meterán las animaciones. Posiblemente solamente la del final del juego y la de cuando te encuentras con el player2.
+Estará tanto los videos resultantes como el proyecto en blender. El juego solo tirará de los vídeos cortos.
+
+La animación de cuando te encuentras es negro todo. Una puerta que se abre (con luz verde como la del color del juego) y una persona aparece. Podo más. Se cierra la puerta y se funde a negro.
+
+

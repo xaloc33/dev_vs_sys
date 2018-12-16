@@ -22,7 +22,7 @@ function room1()
 
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "Te encuentras en la sala de Archivo.\n\nEn las estanterias se encuentra documentación impresa de viejos proyectos. Una capa de polvo cubre cajas de disquetes y cintas.\n\nEl código de juegos ya olvidados está allí esperando que alguien algún día se digne a recuperarlo y liberarlo como software libre.\n\nHas intentado varias veces que la empresa liberase el código de esos viejos juegos. La última vez fue el año pasado pero esos perros de sistemas se metieron por medio y no pudo ser.\n\nHuele como a fiesta secreta en alguna otra habitación colindante. Fiesta a la que no te invitaron.\n\nSalidas: este y sur."
+		room.descripcion = "Te encuentras en la sala de Archivo.\n\nEn las estanterias se encuentra documentación impresa de viejos proyectos. Una capa de polvo cubre cajas de disquetes y cintas.\n\nEl código de juegos ya olvidados está allí esperando que alguien algún día se digne a recuperarlo y liberarlo como software libre.\n\nHas intentado varias veces que la empresa liberase el código de esos viejos juegos. La última vez fue el año pasado pero no pudo ser.\n\nHuele como a fiesta secreta en alguna otra habitación colindante. Fiesta a la que no te invitaron.\n\nSalidas: este y sur."
 	else
 	-- Sistemas
 		room.descripcion = "Te encuentras en la sala de Archivo.\n\nEn las estanterias se encuentra documentación impresa de viejos proyectos. Una capa de polvo cubre cajas de disquetes y cintas. Copias de distros ya olvidadas están archivadas.\n\nUna de las estanterias tiene manuales de sistemas operativos. Existe literatura tecnica de bases de datos y licencias de software privativo de hace decadas.\n\nHuele como a fiesta secreta en alguna otra habitación colindante. Fiesta a la que no te invitaron.\n\nSalidas: este y sur."
@@ -49,18 +49,18 @@ function room2()
 	if player1.alcohol == 1 then
 		-- Desarrollo
 		if player1.tipojugador == "Developer" then
-			room.descripcion = "La haitacn hle a m4rijuanaa.. obre la esa centr quan bollas vaias de whky, vzka y paran. En el suel vs caloillos btante riculo yun par.. d sjeadrs.\n\nAlgen s lopasó bin trs l trajo pias. Segurte esda genta d semas qe no reetan naa n a nae. El peral de limpiezaaaa se lo paará pia limpia eta mida mñana xr la maana.\n\nUn reoj n la paed indila ra y fha.\n\nSalidas: Este, Sur y Oeste"
+			room.descripcion = "La haitacn hle a m4rijuanaa.. obre la esa centr quan bollas vaias de whky, vzka y paran. En el suel vs caloillos btante riculo yun par.. d sjeadrs.\n\nAlgen s lopasó bin trs l trajo pias. Segurte esda genta d direcs qe no reetan naa n a nae. El peral de limpiezaaaa se lo paará pia limpia eta mida mñana xr la maana.\n\nUn reoj n la paed indila ra y fha.\n\nSalidas: Este, Sur y Oeste"
 		else
 		-- Sistemas
-			room.descripcion = "La hbición hule a mahuana. Sobe la mesa cetral quan btelas vcia de whky, vzka y pachaan. Enelsulo vesss cazonclls btante ridulos y 1 par d suadore.\n\nAlgen se lo pasóooo ben tas l trabo pisas. Seamente ea gtuza d desollo q no restan nda ni a nae. El prsnal de liieza s lo pará ppa limndo esa merda mñna pr la mana.\n\nUn roj en la ped inca la hoa y fcha.\n\nSalidas: Este, Sur y Oeste"	
+			room.descripcion = "La hbición hule a mahuana. Sobe la mesa cetral quan btelas vcia de whky, vzka y pachaan. Enelsulo vesss cazonclls btante ridulos y 1 par d suadore.\n\nAlgen se lo pasóooo ben tas l trabo pisas. Seamente ea gtuza d diraccin q no restan nda ni a nae. El prsnal de liieza s lo pará ppa limndo esa merda mñna pr la mana.\n\nUn roj en la ped inca la hoa y fcha.\n\nSalidas: Este, Sur y Oeste"	
 		end
 	else
 		-- Desarrollo
 		if player1.tipojugador == "Developer" then
-			room.descripcion = "La habitación huele a marihuana. Sobre la mesa central quedan botellas vacias de whisky, vozka y pacharan. En el suelo ves calzoncillos bastante ridiculos y un par de sujetadores.\n\nAlguien se lo pasó bien tras el trabajo piensas. Seguramente esa gentuza de sistemas que no respetan nada ni a nadie. El personal de limpieza se lo pasará pipa limpiando esta mierda mañana por la mañana.\n\nUn reloj en la pared indica la hora y fecha.\n\nSalidas: Este, Sur y Oeste"
+			room.descripcion = "La habitación huele a marihuana. Sobre la mesa central quedan botellas vacias de whisky, vozka y pacharan. En el suelo ves calzoncillos bastante ridiculos y un par de sujetadores.\n\nAlguien se lo pasó bien tras el trabajo piensas. Seguramente la gente de dirección que no respetan nada ni a nadie. El personal de limpieza se lo pasará pipa limpiando esta mierda mañana por la mañana.\n\nUn reloj en la pared indica la hora y fecha.\n\nSalidas: Este, Sur y Oeste"
 		else
 		-- Sistemas
-			room.descripcion = "La habitación huele a marihuana. Sobre la mesa central quedan botellas vacias de whisky, vozka y pacharan. En el suelo ves calzoncillos bastante ridiculos y un par de sujetadores.\n\nAlguien se lo pasó bien tras el trabajo piensas. Seguramente esa gentuza de desarrollo que no respetan nada ni a nadie. El personal de limpieza se lo pasará pipa limpiando esta mierda mañana por la mañana.\n\nUn reloj en la pared indica la hora y fecha.\n\nSalidas: Este, Sur y Oeste"	
+			room.descripcion = "La habitación huele a marihuana. Sobre la mesa central quedan botellas vacias de whisky, vozka y pacharan. En el suelo ves calzoncillos bastante ridiculos y un par de sujetadores.\n\nAlguien se lo pasó bien tras el trabajo piensas. Seguramente la gente de dirección que no respetan nada ni a nadie. El personal de limpieza se lo pasará pipa limpiando esta mierda mañana por la mañana.\n\nUn reloj en la pared indica la hora y fecha.\n\nSalidas: Este, Sur y Oeste"	
 		end
 	end
         mostrarBarraInfo()
@@ -82,10 +82,10 @@ function room3()
 
 	-- Desarrollo
 	if player1.tipojugador == "Developer" then
-		room.descripcion = "La sala es bastante pequeña y está completamente vacía.\n\nSolamente un cuadro eléctrico sin tapa se ve colgando en la pared.\n\nUn ejemplo más de como se toman la seguridad en la empresa. Seguramente por la influencia de esa gente chapuzera de sistemas.\n\nSalidas: Este, Oeste y Sur"
+		room.descripcion = "La sala es bastante pequeña y está completamente vacía.\n\nSolamente un cuadro eléctrico sin tapa se ve colgando en la pared.\n\nUn ejemplo más de como se toman la seguridad en la empresa.\n\nHuele a fiesta en una habitación cercana.\n\nSalidas: Este, Oeste y Sur"
 	else
 	-- Sistemas
-		room.descripcion = "La sala es bastante pequeña y está completamente vacía.\n\nSolamente un cuadro eléctrico sin tapa se ve colgando en la pared.\n\nUn ejemplo más de como se toman la seguridad en la empresa. Seguramente por la influencia de esa gente chapuzera de desarrollo.\n\nSalidas: Este, Oeste y Sur"	
+		room.descripcion = "La sala es bastante pequeña y está completamente vacía.\n\nSolamente un cuadro eléctrico sin tapa se ve colgando en la pared.\n\nUn ejemplo más de como se toman la seguridad en la empresa.\n\nHuele a fiesta en una habitación cercana.\n\nSalidas: Este, Oeste y Sur"	
 	end
 
 	mostrarBarraInfo()

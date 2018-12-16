@@ -22,8 +22,8 @@ function desplazarPlayer2()
 	calcularFila()
 	if player1.room ~= player2.room then
 		if player1.nturno < 20 then
-			print("P1 - Room: " .. player1.room .. " Fila: " .. player1.fila .. " Col: " .. player1.col)
-			print("P2 - Room: " .. player2.room .. " Fila: " .. player2.fila .. " Col: " .. player2.col)
+			--print("P1 - Room: " .. player1.room .. " Fila: " .. player1.fila .. " Col: " .. player1.col)
+			--print("P2 - Room: " .. player2.room .. " Fila: " .. player2.fila .. " Col: " .. player2.col)
 			comprobarSalidasPlayer2(player2.room)
 			if salidasPosiblesPlayer2 ~= null then
 				local opciones = {}
@@ -33,9 +33,9 @@ function desplazarPlayer2()
 				player2.room = salidasPosiblesPlayer2[opciones[math.random(#opciones)]]
 			end
 		else
-			print("funcion perseguir activada")
-			print("P1 - Room: " .. player1.room .. " Fila: " .. player1.fila .. " Col: " .. player1.col)
-			print("P2 - Room: " .. player2.room .. " Fila: " .. player2.fila .. " Col: " .. player2.col)
+			--print("funcion perseguir activada")
+			--print("P1 - Room: " .. player1.room .. " Fila: " .. player1.fila .. " Col: " .. player1.col)
+			--print("P2 - Room: " .. player2.room .. " Fila: " .. player2.fila .. " Col: " .. player2.col)
 			perseguirPlayer1()
 		end
 	else
@@ -274,10 +274,34 @@ function love.keypressed(key)
 				room1()
 			end
 			
-			if vcomando == "MIRAR ESTANTERIA" or vcomando == "MIRAR LA ESTANTERIA" or vcomando == "MIRAR ESTANTERIAS" or vcomando == "MIRAR LAS ESTANTERIAS" or vcomando == "MIRAR ESTANTES" then
+			if vcomando == "CONTEMPLAR ESTANTES" or vcomando == "CONTEMPLAR ESTANTERIAS" or vcomando == "CONTEMPLAR ESTANTERIA" or vcomando == "MIRAR ESTANTE" or vcomando == "VER ESTANTERIAS" or vcomando == "VER ESTANTERIA" or vcomando == "MIRAR ESTANTERIA" or vcomando == "MIRAR LA ESTANTERIA" or vcomando == "MIRAR ESTANTERIAS" or vcomando == "MIRAR LAS ESTANTERIAS" or vcomando == "MIRAR ESTANTES" then
 				aumentarTurno()
 				room1()
 				eliza("Las estanterias tienen una gruesa capa de polvo y mierda de roedores. Son de Metal y parecen bastante resistentes.")
+			end
+						
+			if vcomando == "MIRAR LA CAJA DE CINTAS" or vcomando == "MIRAR LAS CAJAS DE CINTAS" or vcomando == "MIRAR LA CINTA" or vcomando == "MIRAR LAS CINTAS" or vcomando == "CONTEMPLAR CINTAS" or vcomando == "CONTEMPLAR CINTA" or vcomando == "EXAMINAR CINTAS" or vcomando == "EXAMINAR CINTA" or vcomando == "VER CINTA" or vcomando == "MIRAR CINTA" or vcomando == "MIRAR CINTAS" or vcomando == "VER CINTAS" then
+				aumentarTurno()
+				room1()
+				eliza("Cintas con software viejo. Hoy todo está ya en la nube. Olvida esas cintas.")
+			end
+			
+			if vcomando == "VER UN DISQUETE" or vcomando == "VER DISQUETES" or vcomando == "VER LOS DISQUETES" or vcomando == "EXAMINAR LOS DISQUETES" or vcomando == "EXAMINAR DISQUETES" or vcomando == "MIRAR UN DISQUETE" or vcomando == "MIRAR LOS DISQUETES" or vcomando == "MIRAR DISQUETES" or vcomando == "MIRAR UN DISCO" or vcomando == "MIRAR LOS DISCOS" or vcomando == "MIRAR DISCOS" or vcomando == "MIRAR DISCO" then
+				aumentarTurno()
+				room1()
+				eliza("Contienen software obsoleto. La nube es el futuro, lleva todo a la nube.")
+			end
+			
+			if vcomando == "MIRAR A LAS CAJAS DE DISQUETES" or vcomando == "MIRAR A LAS CAJAS DE DISCOS" or vcomando == "MIRAR A LAS CAJAS DE SOFTWARE" or vcomando == "MIRAR A LA CAJA" or vcomando == "MIRAR CAJAS CON SOFTWARE" or vcomando == "MIRAR CAJAS DE SOFTWARE" or vcomando == "MIRAR LAS CAJAS" or vcomando == "MIRAR CAJAS" or vcomando == "MIRAR CAJAS DE DISQUETES" then
+				aumentarTurno()
+				room1()
+				eliza("Cajas en mal estado. Con software inferior y anticuado que no fue diseñado para estar en la nube.")
+			end
+			
+			if vcomando == "MIRAR DOCUMENTACION DE VIEJOS PROYECTOS" or vcomando == "MIRAR LA DOCUMENTACION" or vcomando == "MIRAR LA DOCUMENTACIÓN" or vcomando == "MIRAR DOCUMENTACION" or vcomando == "MIRAR DOCUMENTACIÓN" or vcomando == "MIRAR DOCUMENTACIÓN DE VIEJOS PROYECTOS" or vcomando == "DOCUMENTACIÓN" or vcomando == "MIRAR PROYECTOS" or vcomando == "MIRAR LOS PROYECTOS" or vcomando == "MIRAR PROYECTOS" or vcomando == "VIEJOS PROYECTOS" or vcomando == "PROYECTOS" then
+				aumentarTurno()
+				room1()
+				eliza("Proyectos archivados. A nadie le interesan ya. No tienen valor alguno. La nube es el futuro.")
 			end
 			
 			if vcomando == "MIRAR JUEGO" or vcomando == "MIRAR JUEGOS" or vcomando == "MIRAR LOS JUEGOS" or vcomando == "VER JUEGOS" or vcomando == "EXAMINAR LOS JUEGOS" or vcomando == "EXAMINAR JUEGOS" then
@@ -295,6 +319,18 @@ function love.keypressed(key)
 			if vcomando == "OLER" or vcomando == "OLFATEAR" or vcomando == "OLER HABITACIÓN" or vcomando == "OLER HABITACION" or vcomando == "OLER AMBIENTE" or vcomando == "OLISQUEAR" then
 				aumentarTurno()
 				eliza("El olor parece que viene del este.")
+			end
+			
+			if vcomando == "COGER ELEMENTOS" or vcomando == "COGER COSAS" then
+				aumentarTurno()
+				room1()
+				eliza("En esta habitación no podrás coger cosas. Pero trata de ser más explicito de todos modos.")
+			end
+									
+			if vcomando == "COGER EL SOFTWARE" or vcomando == "COGER SOFTWARE" or vcomando == "COGER JUEGOS" or vcomando == "COGER DISCO" or vcomando == "COGER DISQUETE" or vcomando == "COGER UN DISQUETE" or vcomando == "COGER LOS DISQUETES" or vcomando == "COGER DISQUETES" or vcomando == "COGER DISCOS" then
+				aumentarTurno()
+				room1()
+				eliza("No puedes coger nada. Es ilegal.")
 			end
 			
 			for key, value in pairs(salidaEste) do
@@ -494,6 +530,10 @@ function love.keypressed(key)
 				eliza("No puedes coger eso, corres peligro de muerte. Es muy peligroso.")
 			end
 
+			if vcomando == "OLER" or vcomando == "OLFATEAR" or vcomando == "OLER HABITACIÓN" or vcomando == "OLER HABITACION" or vcomando == "OLER AMBIENTE" or vcomando == "OLISQUEAR" then
+				aumentarTurno()
+				eliza("Huele a fiesta. El olor parece que viene de la habitación del oeste.")
+			end
 
 			for key, value in pairs(salidaNorte) do
 				if vcomando == value then
@@ -657,6 +697,11 @@ function love.keypressed(key)
 			if vcomando == "MIRAR" then
 				aumentarTurno()
 				room6()
+			end
+						
+			if vcomando == "OLER" or vcomando == "OLFATEAR" or vcomando == "OLER HABITACIÓN" or vcomando == "OLER HABITACION" or vcomando == "OLER AMBIENTE" or vcomando == "OLISQUEAR" then
+				aumentarTurno()
+				eliza("Huele a fiesta. El olor parece que viene del norte.")
 			end
 			
 			for key, value in pairs(salidaNorte) do
